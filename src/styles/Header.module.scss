@@ -1,0 +1,12 @@
+@import "Variables.scss";
+
+.container {
+  width: 100%;
+  min-height: 30rem;
+  border-radius: 0 0 0 5rem;
+  background: linear-gradient(to right, $very-light-red, $light-red);
+}
+
+.navigation {
+  width: 100%;
+}
