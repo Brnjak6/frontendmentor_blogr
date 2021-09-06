@@ -2,11 +2,75 @@
 
 .container {
   width: 100%;
-  min-height: 30rem;
+  min-height: 35rem;
   border-radius: 0 0 0 5rem;
-  background: linear-gradient(to right, $very-light-red, $light-red);
+  background: url("../images/header.png");
+  background-size: cover;
 }
 
 .navigation {
-  width: 100%;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 3rem;
+  font-weight: 500;
+}
+
+.left_side {
+  display: flex;
+  align-items: center;
+  padding-right: 5rem;
+}
+
+.right_side {
+  display: flex;
+  padding-left: 5rem;
+}
+
+.drop_items {
+  display: flex;
+  margin-left: 2rem;
+}
+
+.drop_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2.5rem;
+  cursor: pointer;
+}
+
+.title {
+  text-align: center;
+  font-family: "Overpass", sans-serif;
+  margin-top: 7rem;
+
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 500;
+    height: 3rem;
+  }
+
+  h4 {
+    font-weight: 400;
+    font-size: 1.2rem;
+  }
+}
+
+.call_to_action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn_start {
+  padding: 1rem 1.2rem;
+  margin-right: 0.5rem;
+}
+
+.btn_learn {
+  padding: 1rem 1.2rem;
+  background: transparent;
+  color: $white;
+  margin-left: 0.5rem;
 }
