@@ -6,7 +6,7 @@ body {
   margin: 0;
   font-family: "Ubuntu", sans-serif;
   overflow-x: hidden;
-  color: $white;
+  color: $very-dark-blue;
   font-size: 16px;
   -webkit-tap-highlight-color: transparent;
 }
@@ -41,4 +41,10 @@ button {
   height: 10px;
   margin-left: 0.4rem;
   margin-top: 0.25rem;
+}
+
+.illustration_desktop {
+  width: 110%;
+  height: 100%;
+  transform: translate(100px, -70px);
 }
