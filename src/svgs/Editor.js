@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-function Illustration() {
+function Editor() {
   return (
     <svg
       className="illustration_desktop"
@@ -129,4 +129,4 @@ function Illustration() {
   );
 }
 
-export default Illustration;
+export default Editor;

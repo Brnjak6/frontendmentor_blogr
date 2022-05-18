@@ -1,0 +1,26 @@
+@import 'Variables.scss';
+
+.container {
+  min-height: 50vh;
+  margin-top: 10rem;
+  display: flex;
+}
+
+.description {
+  padding: 3rem 5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  & h4 {
+    font-size: 1.7rem;
+    font-weight: 600;
+  }
+
+  & p {
+    line-height: 1.7rem;
+    color: $very-dark-greyish-blue;
+    width: 80%;
+  }
+}

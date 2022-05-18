@@ -1,6 +1,6 @@
-import React from "react";
-import styles from "../styles/Intro.module.scss";
-import Illustration from "../svgs/Illustration";
+import React from 'react';
+import styles from '../styles/Intro.module.scss';
+import Editor from '../svgs/Editor';
 
 function Intro() {
   return (
@@ -30,7 +30,7 @@ function Intro() {
           </div>
         </div>
         <div className={styles.right}>
-          <Illustration />
+          <Editor />
         </div>
       </section>
     </div>

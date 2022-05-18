@@ -1,10 +1,10 @@
-@import "Variables.scss";
+@import 'Variables.scss';
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   overflow-x: hidden;
   color: $very-dark-blue;
   font-size: 16px;
@@ -16,7 +16,7 @@ button {
   border: 1px solid #fff;
   border-radius: 1.5rem;
   padding: 0.5rem 2.7rem;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 600;
   color: $light-red;
   font-size: 16px;
@@ -58,4 +58,9 @@ button {
   z-index: 10;
   position: absolute;
   transform: translate(150px, -70px);
+}
+
+.laptop_desktop_svg {
+  transform: translate(-280px, 0px);
+  width: 50%;
 }
