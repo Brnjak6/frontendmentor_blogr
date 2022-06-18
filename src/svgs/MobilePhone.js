@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 function MobilePhone() {
   return (
@@ -30,8 +30,8 @@ function MobilePhone() {
           fill="#1D1D25"
         />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M162.297 33.338H138.66C137.655 33.338 136.841 33.962 136.841 34.855C136.841 35.747 137.655 36.37 138.661 36.37H162.297C163.302 36.37 164.117 35.747 164.117 34.855C164.117 33.962 163.302 33.338 162.297 33.338V33.338ZM172.071 31.208C171.367 31.2083 170.693 31.488 170.195 31.9858C169.698 32.4835 169.419 33.1584 169.419 33.862C169.419 34.5656 169.699 35.2403 170.197 35.7377C170.694 36.235 171.369 36.5143 172.073 36.514C172.776 36.5137 173.451 36.234 173.948 35.7363C174.446 35.2385 174.725 34.5636 174.725 33.86C174.725 33.1564 174.445 32.4817 173.947 31.9843C173.449 31.487 172.774 31.2077 172.071 31.208"
           fill="black"
         />
@@ -112,8 +112,8 @@ function MobilePhone() {
           fill="#1D1D25"
         />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M415.297 96.338H391.66C390.655 96.338 389.841 96.962 389.841 97.855C389.841 98.747 390.655 99.37 391.661 99.37H415.297C416.302 99.37 417.117 98.747 417.117 97.855C417.117 96.962 416.302 96.338 415.297 96.338V96.338ZM425.071 94.208C424.367 94.2083 423.693 94.488 423.195 94.9858C422.698 95.4835 422.419 96.1584 422.419 96.862C422.419 97.5656 422.699 98.2403 423.197 98.7377C423.694 99.235 424.369 99.5143 425.073 99.514C425.776 99.5137 426.451 99.234 426.948 98.7363C427.446 98.2385 427.725 97.5636 427.725 96.86C427.725 96.1564 427.445 95.4817 426.947 94.9843C426.449 94.487 425.774 94.2077 425.071 94.208"
           fill="black"
         />
@@ -125,9 +125,9 @@ function MobilePhone() {
             width="298.196"
             height="515.335"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -159,9 +159,9 @@ function MobilePhone() {
             width="206.649"
             height="98.441"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -193,9 +193,9 @@ function MobilePhone() {
             width="206.649"
             height="98.441"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -227,9 +227,9 @@ function MobilePhone() {
             width="206.649"
             height="98.441"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -261,9 +261,9 @@ function MobilePhone() {
             width="206.649"
             height="98.441"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -295,9 +295,9 @@ function MobilePhone() {
             width="206.649"
             height="98.441"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -329,9 +329,9 @@ function MobilePhone() {
             width="298.196"
             height="515.335"
             filterUnits="userSpaceOnUse"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -364,8 +364,8 @@ function MobilePhone() {
             y2="386.536"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FF8F71" />
-            <stop offset="1" stop-color="#FF3E55" />
+            <stop stopColor="#FF8F71" />
+            <stop offset="1" stopColor="#FF3E55" />
           </linearGradient>
           <linearGradient
             id="paint1_linear"
@@ -375,8 +375,8 @@ function MobilePhone() {
             y2="449.536"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FF8F71" />
-            <stop offset="1" stop-color="#FF3E55" />
+            <stop stopColor="#FF8F71" />
+            <stop offset="1" stopColor="#FF3E55" />
           </linearGradient>
           <linearGradient
             id="paint2_linear"
@@ -386,8 +386,8 @@ function MobilePhone() {
             y2="190.093"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FF8F71" />
-            <stop offset="1" stop-color="#FF3E55" />
+            <stop stopColor="#FF8F71" />
+            <stop offset="1" stopColor="#FF3E55" />
           </linearGradient>
         </defs>
       </svg>

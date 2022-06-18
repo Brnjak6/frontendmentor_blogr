@@ -1,13 +1,15 @@
-import React from "react";
-import styles from "../styles/Header.module.scss";
-import Navigation from "./Navigation";
+import React from 'react';
+import styles from '../styles/Header.module.scss';
+import Navigation from './Navigation';
 
 function Header() {
   return (
     <div className={styles.container}>
       <Navigation />
       <div className={styles.title}>
-        <h1>A modern publishing platform</h1>
+        <h1>
+          A modern <span>publishing platform </span>
+        </h1>
         <h4>Grow your audience and build your online brand</h4>
       </div>
       <div className={styles.call_to_action}>

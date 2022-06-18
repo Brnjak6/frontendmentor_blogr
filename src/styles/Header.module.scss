@@ -1,10 +1,10 @@
-@import "Variables.scss";
+@import 'Variables.scss';
 
 .container {
   width: 100%;
   min-height: 35rem;
   border-radius: 0 0 0 5rem;
-  background: url("../images/header.png");
+  background: url('../images/header.png');
   background-size: cover;
   color: $white;
 }
@@ -26,11 +26,51 @@
 .right_side {
   display: flex;
   padding-left: 5rem;
+
+  @media only screen and (max-width: 1030px) {
+    display: none;
+  }
+}
+
+.burger_menu {
+  display: inline-block;
+  cursor: pointer;
+
+  @media only screen and (min-width: 1030px) {
+    display: none;
+  }
+}
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 3px;
+  background-color: $white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
 }
 
 .drop_items {
   display: flex;
   margin-left: 2rem;
+
+  @media only screen and (max-width: 1030px) {
+    display: none;
+  }
 }
 
 .drop_item {
@@ -43,18 +83,54 @@
 
 .title {
   text-align: center;
-  font-family: "Overpass", sans-serif;
+  font-family: 'Overpass', sans-serif;
   margin-top: 7rem;
+
+  @media only screen and (max-width: 550px) {
+    margin-top: 5rem;
+  }
 
   h1 {
     font-size: 3.5rem;
     font-weight: 500;
     height: 3rem;
+
+    @media only screen and (max-width: 890px) {
+      font-size: 2.5rem;
+    }
   }
 
   h4 {
     font-weight: 400;
     font-size: 1.2rem;
+  }
+
+  @media only screen and (max-width: 890px) {
+    & h1 {
+      font-size: 2.5rem;
+    }
+    & h4 {
+      font-size: 1.1rem;
+    }
+  }
+
+  @media only screen and (max-width: 550px) {
+    & h1 {
+      font-size: 2rem;
+      margin-bottom: 5rem;
+      line-height: 1.4;
+
+      & span {
+        display: inline-block;
+      }
+    }
+
+    & h4 {
+      margin: 5rem 0;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
 

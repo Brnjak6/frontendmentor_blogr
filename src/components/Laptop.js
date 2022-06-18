@@ -1,11 +1,15 @@
 import React from 'react';
 import styles from '../styles/Laptop.module.scss';
 import LaptopDesktop from '../svgs/LaptopDesktop';
+import LaptopMobile from '../svgs/LaptopMobile';
 
 function Laptop() {
   return (
     <div className={styles.container}>
-      <LaptopDesktop />
+      <div className={styles.laptop}>
+        <LaptopDesktop />
+        <LaptopMobile />
+      </div>
       <div className={styles.description}>
         <div className={styles.description_top}>
           <h4>Free, open, simple</h4>

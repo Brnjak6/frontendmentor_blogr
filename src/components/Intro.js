@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from '../styles/Intro.module.scss';
 import Editor from '../svgs/Editor';
+import EditorMobile from '../svgs/EditorMobile';
 
 function Intro() {
   return (
@@ -31,6 +32,7 @@ function Intro() {
         </div>
         <div className={styles.right}>
           <Editor />
+          <EditorMobile />
         </div>
       </section>
     </div>

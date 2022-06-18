@@ -1,7 +1,7 @@
-import React from "react";
-import styles from "../styles/Header.module.scss";
-import LogoSvg from "../svgs/Logo";
-import LightArrow from "../svgs/LightArrow";
+import React from 'react';
+import styles from '../styles/Header.module.scss';
+import LogoSvg from '../svgs/Logo';
+import LightArrow from '../svgs/LightArrow';
 
 function Navigation() {
   return (
@@ -24,9 +24,14 @@ function Navigation() {
         </div>
       </section>
       <section className={styles.right_side}>
-        <p style={{ marginRight: "2rem", cursor: "pointer" }}>Login</p>
+        <p style={{ marginRight: '2rem', cursor: 'pointer' }}>Login</p>
         <button>Sign Up</button>
       </section>
+      <div className={styles.burger_menu}>
+        <div className={styles.bar1}></div>
+        <div className={styles.bar2}></div>
+        <div className={styles.bar3}></div>
+      </div>
     </div>
   );
 }

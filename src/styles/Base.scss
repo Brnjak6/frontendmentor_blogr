@@ -43,10 +43,20 @@ button {
   margin-top: 0.25rem;
 }
 
-.illustration_desktop {
+.editor_desktop {
   width: 110%;
   height: 100%;
   transform: translateX(100px);
+
+  @media only screen and (max-width: 1315px) {
+    display: none;
+  }
+}
+
+.editor_mobile {
+  @media only screen and (min-width: 1315px) {
+    display: none;
+  }
 }
 
 .circles-svg {
@@ -62,5 +72,13 @@ button {
 
 .laptop_desktop_svg {
   transform: translate(-280px, 0px);
-  width: 50%;
+
+  @media only screen and (max-width: 1315px) {
+    display: none;
+  }
+}
+.laptop_mobile_svg {
+  @media only screen and (min-width: 1315px) {
+    display: none;
+  }
 }

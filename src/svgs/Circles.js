@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 function Circles() {
   return (
@@ -9,7 +9,7 @@ function Circles() {
         xmlns="http://www.w3.org/2000/svg"
         className="circles-svg"
       >
-        <g transform="matrix(1 0 0 -1 0 1018)" fill="none" fill-rule="evenodd">
+        <g transform="matrix(1 0 0 -1 0 1018)" fill="none" fillRule="evenodd">
           <rect
             fill="#3E4062"
             x="213"
