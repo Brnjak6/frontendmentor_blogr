@@ -9,17 +9,41 @@ function Navigation() {
       <section className={styles.left_side}>
         <LogoSvg />
         <div className={styles.drop_items}>
-          <div className={styles.drop_item}>
+          <div className="drop_item">
             <p>Product</p>
             <LightArrow />
+            <div className="drop_menu">
+              <ul>
+                <li>Overview</li>
+                <li>Pricing</li>
+                <li>Marketplace</li>
+                <li>Features</li>
+                <li>Integrations</li>
+              </ul>
+            </div>
           </div>
-          <div className={styles.drop_item}>
+          <div className="drop_item">
             <p>Company</p>
             <LightArrow />
+            <div className="drop_menu">
+              <ul>
+                <li>About</li>
+                <li>Team</li>
+                <li>Blog</li>
+                <li>Careers</li>
+              </ul>
+            </div>
           </div>
-          <div className={styles.drop_item}>
+          <div className="drop_item">
             <p>Connect</p>
             <LightArrow />
+            <div className="drop_menu">
+              <ul>
+                <li>Contact</li>
+                <li>Newsletter</li>
+                <li>LinkedIn</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>

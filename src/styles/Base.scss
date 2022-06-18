@@ -21,6 +21,12 @@ button {
   color: $light-red;
   font-size: 16px;
   cursor: pointer;
+  transition: 0.2s;
+
+  &:hover {
+    background: $light-red;
+    color: $white;
+  }
 }
 
 // SVG
@@ -43,6 +49,50 @@ button {
   margin-top: 0.25rem;
 }
 
+.drop_menu {
+  position: absolute;
+  top: 0;
+  display: none;
+
+  & ul {
+    width: 6rem;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    background: $white;
+    color: $very-dark-gray-blue;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.47);
+  }
+  & ul li {
+    list-style-type: none;
+    margin: 0.5rem 0;
+
+    &:hover {
+      font-weight: bold;
+    }
+  }
+}
+
+.drop_item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2.5rem;
+  cursor: pointer;
+
+  &:hover .light-arrow-svg {
+    transform: rotate(180deg) translateY(5px);
+    transition: 0.2s;
+  }
+
+  &:hover .drop_menu {
+    display: block;
+  }
+}
+
 .editor_desktop {
   width: 110%;
   height: 100%;
@@ -62,12 +112,39 @@ button {
 .circles-svg {
   transform: translate(-220px, -500px);
   position: absolute;
+
+  @media only screen and (max-width: 1580px) {
+    transform: scale(0.9) translate(-220px, -550px);
+  }
+  @media only screen and (max-width: 850px) {
+    transform: scale(0.7) translate(-250px, -700px);
+  }
+  @media only screen and (max-width: 600px) {
+    transform: scale(0.6) translate(-450px, -850px);
+  }
+  @media only screen and (max-width: 450px) {
+    transform: scale(0.6) translate(-490px, -850px);
+  }
 }
 
 .mobile-svg {
   z-index: 10;
   position: absolute;
   transform: translate(150px, -70px);
+
+  @media only screen and (max-width: 1580px) {
+    transform: translate(25px, -320px);
+  }
+
+  @media only screen and (max-width: 850px) {
+    transform: translate(55px, -320px) scale(0.8);
+  }
+  @media only screen and (max-width: 600px) {
+    transform: translate(-50px, -320px) scale(0.65);
+  }
+  @media only screen and (max-width: 450px) {
+    transform: translate(-70px, -310px) scale(0.6);
+  }
 }
 
 .laptop_desktop_svg {
@@ -78,6 +155,7 @@ button {
   }
 }
 .laptop_mobile_svg {
+  transform: scale(1.1);
   @media only screen and (min-width: 1315px) {
     display: none;
   }

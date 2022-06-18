@@ -1,13 +1,12 @@
-import React from "react";
-import styles from "../styles/Mobile.module.scss";
-import Circles from "../svgs/Circles";
-import MobilePhone from "../svgs/MobilePhone";
+import React from 'react';
+import styles from '../styles/Mobile.module.scss';
+import Circles from '../svgs/Circles';
+import MobilePhone from '../svgs/MobilePhone';
 
 function Mobile() {
   return (
     <div className={styles.container}>
       <MobilePhone />
-
       <section className={styles.left}>
         <Circles />
       </section>

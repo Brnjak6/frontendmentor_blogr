@@ -27,6 +27,40 @@
     & ul > li {
       margin: 1rem 0;
       cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1105px) {
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 0;
+
+    & .product,
+    .company,
+    .connect {
+      margin-top: 1rem;
+    }
+
+    .product {
+      margin-top: 5rem;
+    }
+
+    & h4 {
+      margin: 0;
+      text-align: center;
+      color: $white;
+    }
+
+    & ul > li {
+      text-align: center;
+      margin: 0;
+    }
+
+    & ul {
+      margin: 0.5rem;
     }
   }
 }

@@ -7,6 +7,10 @@
   background: url('../images/header.png');
   background-size: cover;
   color: $white;
+
+  @media only screen and (max-width: 850px) {
+    background: url('../images/header-mobile.png');
+  }
 }
 
 .navigation {
@@ -33,7 +37,10 @@
 }
 
 .burger_menu {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
 
   @media only screen and (min-width: 1030px) {
@@ -46,7 +53,7 @@
   width: 35px;
   height: 3px;
   background-color: $white;
-  margin: 6px 0;
+  margin: 3px 0;
   transition: 0.4s;
 }
 
@@ -73,12 +80,30 @@
   }
 }
 
-.drop_item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 2.5rem;
-  cursor: pointer;
+.drop_menu {
+  position: absolute;
+  top: 0;
+
+  & ul {
+    width: 6rem;
+    margin-top: 3rem;
+
+    margin-left: auto;
+    margin-right: auto;
+    background: $white;
+    color: $very-dark-gray-blue;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.47);
+  }
+  & ul li {
+    list-style-type: none;
+    margin: 0.5rem 0;
+
+    &:hover {
+      font-weight: bold;
+    }
+  }
 }
 
 .title {
@@ -150,4 +175,10 @@
   background: transparent;
   color: $white;
   margin-left: 0.5rem;
+  transition: 0.2s;
+
+  &:hover {
+    color: $light-red;
+    background: $white;
+  }
 }

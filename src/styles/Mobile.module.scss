@@ -1,4 +1,4 @@
-@import "Variables.scss";
+@import 'Variables.scss';
 
 .container {
   min-height: 25rem;
@@ -12,6 +12,11 @@
   overflow: hidden;
   display: flex;
   margin-top: 15rem;
+
+  @media only screen and (max-width: 1580px) {
+    min-height: 32rem;
+    flex-direction: column;
+  }
 }
 
 .left {
@@ -22,9 +27,8 @@
 .right {
   width: 50%;
   color: $white;
-  font-family: "Overpass", sans-serif;
+  font-family: 'Overpass', sans-serif;
   display: flex;
-
   justify-content: center;
   flex-direction: column;
 
@@ -39,5 +43,44 @@
     letter-spacing: 0.15rem;
     line-height: 1.8;
     font-size: 0.9rem;
+  }
+
+  @media only screen and (max-width: 1580px) {
+    min-height: 32rem;
+    width: 100vw;
+    justify-content: flex-end;
+    align-items: flex-end;
+    z-index: 500;
+
+    & h1,
+    p {
+      width: 65%;
+      text-align: center;
+      margin-right: 4rem;
+    }
+
+    & p {
+      margin-bottom: 5rem;
+    }
+  }
+
+  @media only screen and (max-width: 850px) {
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 40rem;
+
+    & h1,
+    p {
+      width: 80%;
+      margin-right: 0rem;
+    }
+
+    & p {
+      margin-bottom: 10rem;
+    }
+
+    & h1 {
+      font-size: 2rem;
+    }
   }
 }
