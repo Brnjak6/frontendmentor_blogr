@@ -126,15 +126,14 @@ button {
 
 .burger_box {
   height: fit-content;
+  @media only screen and (min-width: 1030px) {
+    display: none;
+  }
 }
 
 .burger_menu {
   display: inline-block;
   cursor: pointer;
-
-  @media only screen and (min-width: 1030px) {
-    display: none;
-  }
 }
 
 .authorization {

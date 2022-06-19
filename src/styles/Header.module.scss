@@ -25,12 +25,10 @@
 .left_side {
   display: flex;
   align-items: center;
-  padding-right: 5rem;
 }
 
 .right_side {
   display: flex;
-  padding-left: 5rem;
 
   @media only screen and (max-width: 1030px) {
     display: none;
