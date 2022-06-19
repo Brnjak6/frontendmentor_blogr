@@ -2,7 +2,7 @@ import React from 'react';
 import styles from '../styles/Header.module.scss';
 import LogoSvg from '../svgs/Logo';
 import LightArrow from '../svgs/LightArrow';
-import { useState } from 'react/cjs/react.development';
+import { useState } from 'react';
 import BurgerMenu from './BurgerMenu';
 
 function Navigation() {
