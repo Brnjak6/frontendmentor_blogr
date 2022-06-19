@@ -2,8 +2,15 @@ import React from 'react';
 import styles from '../styles/Header.module.scss';
 import LogoSvg from '../svgs/Logo';
 import LightArrow from '../svgs/LightArrow';
+import { useState } from 'react/cjs/react.development';
+import BurgerMenu from './BurgerMenu';
 
 function Navigation() {
+  const [isBurgerActive, setIsBurgerActive] = useState(false);
+
+  const burgerHandler = () => {
+    setIsBurgerActive(!isBurgerActive);
+  };
   return (
     <div className={styles.navigation}>
       <section className={styles.left_side}>
@@ -51,11 +58,14 @@ function Navigation() {
         <p style={{ marginRight: '2rem', cursor: 'pointer' }}>Login</p>
         <button>Sign Up</button>
       </section>
-      <div className={styles.burger_menu}>
-        <div className={styles.bar1}></div>
-        <div className={styles.bar2}></div>
-        <div className={styles.bar3}></div>
+      <div onClick={burgerHandler} className="burger_box">
+        <div className={isBurgerActive ? 'change burger_menu' : 'burger_menu'}>
+          <div className="bar1"></div>
+          <div className="bar2"></div>
+          <div className="bar3"></div>
+        </div>
       </div>
+      {isBurgerActive && <BurgerMenu isBurgerActive={isBurgerActive} />}
     </div>
   );
 }

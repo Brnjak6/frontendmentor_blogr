@@ -1,0 +1,14 @@
+@import 'Variables.scss';
+
+.container {
+  position: absolute;
+  background: $white;
+  width: 90%;
+  color: $very-dark-gray-blue;
+  left: 50%;
+  transform: translate(-50%, 60%);
+}
+
+.burger_items {
+  display: none;
+}
